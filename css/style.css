@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    gap: 10px;
+}
+
+.red-box {
+    width: 250px;
+    height: 250px;
+    background: red;
+}
+
+.blue-box {
+    width: 250px;
+    height: 250px;
+    background: blue;
+}
+
+.green-box {
+    width: 250px;
+    height: 250px;
+    background: green;
+}
