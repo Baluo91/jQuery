@@ -8,9 +8,11 @@ $(function() {
 });
 
 $(function() {
-    $(".red-box").animate({
-        "margin-left":"250px", // posunie z default na 250px 
-        "margin-left":"+=400px" // default je 50 vďaka += posunie z 50 na 450px 
-        
-    },4000); //? čas sa nastavuje medzi zátvorkami 
+    $(".blue-box").animate({
+        "margin-left":"+=400px" // posunie z default na 400px 
+    },4000);
+    
+    $(".blue-box").animate({
+        "margin-left":"-=400px" // vďaka -= posunie zo 400 na default
+    },4000);
 });
