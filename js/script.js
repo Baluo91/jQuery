@@ -2,10 +2,11 @@ $(function() {
     // sem budeme písať jQuery kód
 });
 
-//* 21. Výběr elementů: běžný tagu, class a id
+//* 23. Výběr elementů: běžný tagu, class a id - prvý a posledný element - párne a nepárne
+//? ako vybrať z li elementov napr. ten nepárny?
+//! $("li:even") alebo párny $("li:odd")
 
 $(function() {
-    $("p").css("background-color","rgba(150,150,40,0.8)");
-    $(".red-box").css("background-color","rgba(150,150,40,0.8)");
-    $("#list").css("background-color","rgba(150,150,40,0.8)");
+    $("li:odd").css("background-color","rgba(150,150,40,0.8)");
+    
 });
