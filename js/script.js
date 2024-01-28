@@ -2,9 +2,24 @@ $(function() {
     // sem budeme písať jQuery kód
 });
 
-//* 19. Chaining neboli řetězení
+//* 20. Callback funkce 
+// volá sa , keď animácie skončia
 
+// $(function() {
+//     $(".red-box").fadeTo(2000,0,function(){
+//         alert("Toto sa stane po animácii");
+//     });
+// });
+
+//? tento zápis - najprv red box fadeTo a po ňom blue box
+//* používame call back funkciu aj miesto delay. 
+//* pred poslednou  zátvorkou ) pridáme ,function(){ a sem píšeme ďalšiu --- $(".red-box").fadeTo(2000,0,function(){}  */
 $(function() {
-    $(".blue-box").delay(2000).fadeTo(1000,0.4).fadeOut(2000).delay(1000).fadeIn(2000);
+    $(".red-box").fadeTo(2000,0,function(){
+        $(".blue-box").fadeTo(2000,0,function(){
+            $(".green-box").fadeTo(2000,0);
+        });
+    });
 });
 
+//! všetky 3 boxy postupne zmiznú - fadeTo 
