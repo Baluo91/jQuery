@@ -4,15 +4,12 @@
     box-sizing: border-box;
 }
 
-.box {
-    display: flex;
-    gap: 10px;
-}
 
 .red-box {
     width: 250px;
     height: 250px;
     background: red;
+    margin-left: 0px;
 }
 
 .blue-box {
