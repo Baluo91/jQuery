@@ -2,15 +2,16 @@ $(function() {
     // sem budeme písať jQuery kód
 });
 
-//* 30. html DOM  
-// TODO: $("ul").append
-//?  prečítalo html potom js a zistilo že v ul má appendnúť čiže pridať ďalší element s textom Pridanie polžky....
+//* 31.  DOM a HTML: Append a prepend
+// TODO: $("ul").prepend     $("ul").append
+//?  
 //!   
+/* append = pridaj za */
+/* prepend = pridaj pred */
 
 $(function() {
-    $("ul").append("<li>Pridanie položky li cez js v html nie je</li>");
-    //! iný zápis rovnaký výsledok 
-    $("<li>Pridanie položky li cez js v html nie je</li>").appendTo($("ul"));
+    $("ul").prepend("<li>Ja som tu prvý</li>");
+    $("ul").append("<li>Ja som tu posledný</li>");
 });
 
 
