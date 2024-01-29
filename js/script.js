@@ -2,22 +2,15 @@ $(function() {
     // sem budeme písať jQuery kód
 });
 
-//* 28. Výběr elementů: filter - modulo 
-// TODO: zbytok po celočíselnom delení 
-/*
-5 modulo 2 = 1 (2 sa zmestí do 5 2x a ostane 1)
-6 modulo 2 = 2 (2 sa zmestí do 6 3x a ostane 0)
-12 modulo 5 = 2 (5 sa zmestí do 12 2x a ostane 2)
-14 modulo 5 = 4 (5 sa zmestí do 14 2x a ostane 4)
-*/
-//?   modulo sa označuje znakom % 6 % 2 = 0
-//?   
+//* 30. html DOM  
+// TODO: $("ul").append
+//?  prečítalo html potom js a zistilo že v ul má appendnúť čiže pridať ďalší element s textom Pridanie polžky....
 //!   
 
 $(function() {
-    $("li").filter(function(index){
-        return index % 2 === 0;
-    }).css("background-color","rgba(150,150,40,0.8");
+    $("ul").append("<li>Pridanie položky li cez js v html nie je</li>");
+    //! iný zápis rovnaký výsledok 
+    $("<li>Pridanie položky li cez js v html nie je</li>").appendTo($("ul"));
 });
 
 
